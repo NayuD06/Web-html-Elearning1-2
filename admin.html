@@ -22,9 +22,9 @@
       <aside class="sidebar">
         <ul>
           <li><a class="active" href="#">Tổng quan</a></li>
-          <li><a href="#">Dự án</a></li>
-          <li><a href="#">Kỹ năng</a></li>
-          <li><a href="#">Công nghệ</a></li>
+          <li><a href="#du-an">Dự án</a></li>
+          <li><a href="#ky-nang">Kỹ năng</a></li>
+          <li><a href="#cong-nghe">Công nghệ</a></li>
           <li><a href="#">Liên hệ</a></li>
           <li><a href="index.html">Về trang chủ</a></li>
         </ul>
@@ -54,41 +54,250 @@
           </div>
         </section>
 
-        <div class="toolbar">
-          <h2>Quản lý dự án</h2>
-          <div class="actions">
-            <input type="text" placeholder="Tìm dự án..." />
-            <a class="btn" href="#">+ Thêm dự án</a>
+        <section class="panel" id="du-an">
+          <div class="toolbar">
+            <h2>Quản lý dự án</h2>
+            <div class="actions">
+              <input type="text" placeholder="Tìm dự án..." />
+              <a class="btn" href="#">+ Thêm dự án</a>
+            </div>
           </div>
-        </div>
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Ảnh</th>
+                  <th>Tên dự án</th>
+                  <th>Mô tả</th>
+                  <th>Trạng thái</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><img class="thumb" src="img/quanlysinhvien.png" alt="Trang quản lý sinh viên" /></td>
+                  <td><b>Trang quản lý sinh viên</b></td>
+                  <td>Quản lý thông tin sinh viên gồm thêm, sửa, xóa và tìm kiếm hồ sơ.</td>
+                  <td><span class="tag tag-done">Hoàn thành</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><img class="thumb" src="img/quanlytask.jpg" alt="Quản lý task" /></td>
+                  <td><b>Quản lý task</b></td>
+                  <td>Theo dõi công việc cần làm, đánh dấu hoàn thành và lọc theo trạng thái.</td>
+                  <td><span class="tag tag-done">Hoàn thành</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><img class="thumb" src="img/quanlychitieu.png" alt="Quản lý chi tiêu" /></td>
+                  <td><b>Quản lý chi tiêu</b></td>
+                  <td>Ghi lại các khoản thu chi và xem tổng hợp chi tiêu theo thời gian.</td>
+                  <td><span class="tag tag-doing">Đang làm</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-        <section class="cards">
-          <div class="card">
-            <img src="img/quanlysinhvien.png" alt="Trang quản lý sinh viên" />
-            <h3>Trang quản lý sinh viên</h3>
-            <p>Quản lý thông tin sinh viên gồm thêm, sửa, xóa và tìm kiếm hồ sơ.</p>
-            <div class="btns">
-              <a class="btn" href="#">Sửa</a>
-              <a class="btn btn-danger" href="#">Xóa</a>
+        <section class="panel" id="ky-nang">
+          <div class="toolbar">
+            <h2>Quản lý kỹ năng</h2>
+            <div class="actions">
+              <input type="text" placeholder="Tìm kỹ năng..." />
+              <a class="btn" href="#">+ Thêm kỹ năng</a>
             </div>
           </div>
-          <div class="card">
-            <img src="img/quanlytask.jpg" alt="Quản lý task" />
-            <h3>Quản lý task</h3>
-            <p>Theo dõi công việc cần làm, đánh dấu hoàn thành và lọc theo trạng thái.</p>
-            <div class="btns">
-              <a class="btn" href="#">Sửa</a>
-              <a class="btn btn-danger" href="#">Xóa</a>
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nhóm</th>
+                  <th>Kỹ năng</th>
+                  <th>Loại</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><b>Programming</b></td>
+                  <td>C#, JavaScript, PHP, C++, TypeScript</td>
+                  <td><span class="tag tag-done">Chuyên môn</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><b>Backend</b></td>
+                  <td>Spring Boot, FastAPI, NestJS</td>
+                  <td><span class="tag tag-done">Chuyên môn</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><b>Frontend</b></td>
+                  <td>React, HTML, CSS</td>
+                  <td><span class="tag tag-done">Chuyên môn</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><b>Database</b></td>
+                  <td>MySQL, PostgreSQL, MongoDB, SQL Server, Supabase</td>
+                  <td><span class="tag tag-done">Chuyên môn</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><b>Kỹ năng mềm</b></td>
+                  <td>Giao tiếp, làm việc nhóm, quản lý thời gian, tự học</td>
+                  <td><span class="tag tag-doing">Kỹ năng mềm</span></td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel" id="cong-nghe">
+          <div class="toolbar">
+            <h2>Công nghệ sử dụng</h2>
+            <div class="actions">
+              <input type="text" placeholder="Tìm công nghệ..." />
+              <a class="btn" href="#">+ Thêm công nghệ</a>
             </div>
           </div>
-          <div class="card">
-            <img src="img/quanlychitieu.png" alt="Quản lý chi tiêu" />
-            <h3>Quản lý chi tiêu</h3>
-            <p>Ghi lại các khoản thu chi và xem tổng hợp chi tiêu theo thời gian.</p>
-            <div class="btns">
-              <a class="btn" href="#">Sửa</a>
-              <a class="btn btn-danger" href="#">Xóa</a>
-            </div>
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Biểu tượng</th>
+                  <th>Tên</th>
+                  <th>Mô tả</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><img class="icon" src="img/html.png" alt="HTML5" /></td>
+                  <td><b>HTML5</b></td>
+                  <td>Ngôn ngữ đánh dấu xây dựng cấu trúc trang web</td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><img class="icon" src="img/css.png" alt="CSS3" /></td>
+                  <td><b>CSS3</b></td>
+                  <td>Ngôn ngữ tạo kiểu và bố cục cho trang web</td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><img class="icon" src="img/docker.png" alt="Docker" /></td>
+                  <td><b>Docker</b></td>
+                  <td>Nền tảng đóng gói ứng dụng dạng container</td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><img class="icon" src="img/github.png" alt="Git và GitHub" /></td>
+                  <td><b>Git và GitHub</b></td>
+                  <td>Quản lý phiên bản và lưu trữ mã nguồn</td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><img class="icon" src="img/vscode.jpg" alt="Visual Studio Code" /></td>
+                  <td><b>Visual Studio Code</b></td>
+                  <td>Trình soạn thảo mã nguồn chính</td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><img class="icon" src="img/postman.png" alt="Postman" /></td>
+                  <td><b>Postman</b></td>
+                  <td>Kiểm tra và gỡ lỗi API</td>
+                  <td>
+                    <div class="btns">
+                      <a class="btn" href="#">Sửa</a>
+                      <a class="btn btn-danger" href="#">Xóa</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </main>

@@ -29,7 +29,8 @@ html{
     --font-size-title: 36px;
 
     /* Bo góc */
-    --radius: 2px;
+    --radius: 6px;
+    --radius-card: 10px;
     --radius-round: 50%;
 }
 body{
@@ -143,6 +144,7 @@ nav{
 }
 .menu>li{
     padding:8px 5px;
+    border-radius: var(--radius);
 }
 .menu a{
     text-decoration: none;
@@ -233,7 +235,7 @@ footer{
 .skill-card{
     background-color: var(--color-surface);
     padding:16px;
-    border-radius: var(--radius);
+    border-radius: var(--radius-card);
     box-shadow: var(--shadow);
 }
 .skill-card h3{
@@ -258,7 +260,7 @@ footer{
     gap:16px;
     background-color: var(--color-surface);
     padding:16px;
-    border-radius: var(--radius);
+    border-radius: var(--radius-card);
     box-shadow: var(--shadow);
 }
 .tool-icon{
@@ -283,7 +285,7 @@ footer{
 .project-card{
     background-color: var(--color-surface);
     padding:16px;
-    border-radius: var(--radius);
+    border-radius: var(--radius-card);
     box-shadow: var(--shadow);
 }
 .project-featured{
@@ -434,6 +436,8 @@ footer{
     display:grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: var(--shadow);
+    border-radius: var(--radius-card);
+    overflow:hidden;
 }
 .intro{
     background-color: var(--color-primary);
@@ -615,7 +619,7 @@ footer{
 .stat{
     background-color: var(--color-surface);
     padding:16px 20px;
-    border-radius: var(--radius);
+    border-radius: var(--radius-card);
     box-shadow: var(--shadow);
 }
 .stat p{
@@ -670,36 +674,81 @@ footer{
 .btn-danger{
     background-color: var(--color-danger);
 }
-.cards{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap:16px;
-}
-.card{
-    background-color: var(--color-surface);
-    padding:16px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+.panel{
     display:flex;
     flex-direction:column;
-    gap:8px;
+    gap:16px;
 }
-.card img{
-    height:160px;
-    object-fit:cover;
-    border-radius: var(--radius);
+.table-box{
+    background-color: var(--color-surface);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    overflow-x:auto;
 }
-.card h3{
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size: var(--font-size-small);
+}
+th,
+td{
+    padding:12px 16px;
+    text-align:left;
+    vertical-align:middle;
+}
+th{
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    text-transform:uppercase;
+    white-space:nowrap;
+}
+td{
+    border-bottom:1px solid var(--color-border);
+    line-height:1.5;
+}
+tbody tr:nth-child(even){
+    background-color: var(--color-background);
+}
+tbody tr:hover{
+    background-color: var(--color-thumb);
+}
+tbody tr:last-child td{
+    border-bottom:none;
+}
+td b{
     color: var(--color-primary);
 }
-.card p{
-    font-size: var(--font-size-small);
-    line-height:1.5;
+.thumb{
+    width:120px;
+    height:68px;
+    object-fit:cover;
+    border-radius: var(--radius);
+    display:block;
+}
+.icon{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+    display:block;
+}
+.tag{
+    display:inline-block;
+    padding:4px 10px;
+    border-radius: var(--radius);
+    font-weight:bold;
+    white-space:nowrap;
+}
+.tag-done{
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+}
+.tag-doing{
+    background-color: var(--color-secondary);
+    color: var(--color-text);
 }
 .btns{
     display:flex;
     gap:8px;
-    margin-top:auto;
 }
 @media(max-width: 1023px){
     .layout{
@@ -736,11 +785,16 @@ footer{
     .actions input{
         width:100%;
     }
-    .cards{
-        grid-template-columns: 1fr;
+    table{
+        min-width:640px;
     }
-    .card img{
-        height:140px;
+    th,
+    td{
+        padding:10px 12px;
+    }
+    .thumb{
+        width:90px;
+        height:52px;
     }
     .login{
         grid-template-columns: 1fr;
