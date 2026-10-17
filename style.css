@@ -552,16 +552,18 @@ footer{
     border:2px solid var(--color-surface);
 }
 .logout{
-    color: var(--color-surface);
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    font-weight:bold;
     text-decoration:none;
     padding:8px 16px;
-    border:1px solid var(--color-surface);
+    border:1px solid var(--color-secondary);
     border-radius: var(--radius);
 }
 .logout:hover{
-    background-color: var(--color-secondary);
-    border-color: var(--color-secondary);
-    color: var(--color-text);
+    background-color: var(--color-surface);
+    border-color: var(--color-surface);
+    color: var(--color-primary);
 }
 .layout{
     display:grid;
@@ -706,6 +708,11 @@ td{
     border-bottom:1px solid var(--color-border);
     line-height:1.5;
 }
+th:first-child,
+td:first-child{
+    width:60px;
+    text-align:center;
+}
 tbody tr:nth-child(even){
     background-color: var(--color-background);
 }
@@ -717,19 +724,6 @@ tbody tr:last-child td{
 }
 td b{
     color: var(--color-primary);
-}
-.thumb{
-    width:120px;
-    height:68px;
-    object-fit:cover;
-    border-radius: var(--radius);
-    display:block;
-}
-.icon{
-    width:40px;
-    height:40px;
-    object-fit:contain;
-    display:block;
 }
 .tag{
     display:inline-block;
@@ -791,10 +785,6 @@ td b{
     th,
     td{
         padding:10px 12px;
-    }
-    .thumb{
-        width:90px;
-        height:52px;
     }
     .login{
         grid-template-columns: 1fr;
