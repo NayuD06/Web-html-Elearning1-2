@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Trang quản trị</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="admin">
+    <header class="topbar">
+      <div class="brand">
+        <img src="img/logo.jpg" alt="Logo" />
+      </div>
+      <div class="user">
+        <span>Admin</span>
+        <img src="img/avt.jpg" alt="Ảnh đại diện" />
+        <a class="logout" href="login.html">Đăng xuất</a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <ul>
+          <li><a class="active" href="#">Tổng quan</a></li>
+          <li><a href="#">Dự án</a></li>
+          <li><a href="#">Kỹ năng</a></li>
+          <li><a href="#">Công nghệ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="index.html">Về trang chủ</a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="welcome">
+          <h1>Xin chào, Mạch Duy An</h1>
+          <p>Khu vực quản trị website portfolio cá nhân</p>
+        </div>
+
+        <section class="stats">
+          <div class="stat">
+            <p>Tổng số dự án</p>
+            <strong>3</strong>
+            <small>1 đang làm, 2 hoàn thành</small>
+          </div>
+          <div class="stat">
+            <p>Lượt truy cập</p>
+            <strong>2.468</strong>
+            <small>Trong 30 ngày gần nhất</small>
+          </div>
+          <div class="stat">
+            <p>Tin nhắn liên hệ</p>
+            <strong>7</strong>
+            <small>2 tin chưa đọc</small>
+          </div>
+        </section>
+
+        <div class="toolbar">
+          <h2>Quản lý dự án</h2>
+          <div class="actions">
+            <input type="text" placeholder="Tìm dự án..." />
+            <a class="btn" href="#">+ Thêm dự án</a>
+          </div>
+        </div>
+
+        <section class="cards">
+          <div class="card">
+            <img src="img/quanlysinhvien.png" alt="Trang quản lý sinh viên" />
+            <h3>Trang quản lý sinh viên</h3>
+            <p>Quản lý thông tin sinh viên gồm thêm, sửa, xóa và tìm kiếm hồ sơ.</p>
+            <div class="btns">
+              <a class="btn" href="#">Sửa</a>
+              <a class="btn btn-danger" href="#">Xóa</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/quanlytask.jpg" alt="Quản lý task" />
+            <h3>Quản lý task</h3>
+            <p>Theo dõi công việc cần làm, đánh dấu hoàn thành và lọc theo trạng thái.</p>
+            <div class="btns">
+              <a class="btn" href="#">Sửa</a>
+              <a class="btn btn-danger" href="#">Xóa</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/quanlychitieu.png" alt="Quản lý chi tiêu" />
+            <h3>Quản lý chi tiêu</h3>
+            <p>Ghi lại các khoản thu chi và xem tổng hợp chi tiêu theo thời gian.</p>
+            <div class="btns">
+              <a class="btn" href="#">Sửa</a>
+              <a class="btn btn-danger" href="#">Xóa</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

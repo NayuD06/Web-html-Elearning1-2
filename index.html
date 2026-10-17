@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Giao diện cơ bản</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Ảnh logo" />
+        <label class="menu-icon" for="menu-check"><img src="img/menu.png" alt="Mở menu" /></label>
+        <span class="profile-name">Profile</span>
+      </div>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Search" />
+      </div>
+      <div class="loginbutton">
+        <a class="login-btn" href="login.html">Đăng nhập</a>
+      </div>
+    </header>
+    <input type="checkbox" id="menu-check" class="menu-check" />
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#ky-nang">Kĩ năng</a></li>
+        <li><a href="#du-an">Dự án</a></li>
+        <li><a href="#lien-he">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <section class="profile-section" id="gioi-thieu">
+      <div class="profile-card">
+        <img class="profile-avatar" src="img/avt.jpg" alt="Ảnh đại diện" />
+        <div class="profile-intro">
+          <h1>Mình là Mạch Duy An</h1>
+          <h3 class="profile-major">
+            Sinh viên năm 3 ngành Công nghệ thông tin
+          </h3>
+          <h3 class="profile-school">
+            Trường Đại Học Giao Thông Vận Tải TP HCM
+          </h3>
+          <p>
+            Là sinh viên Công nghệ thông tin với định hướng trở thành
+            Backend/Fullstack Developer, tôi không ngừng trau dồi kiến thức về
+            lập trình, cơ sở dữ liệu và kiến trúc hệ thống. Tôi mong muốn vận
+            dụng tư duy logic cùng khả năng phát triển cả Front-end và Back-end
+            để xây dựng các sản phẩm web chất lượng, đáp ứng tốt nhu cầu thực
+            tế, đồng thời đảm bảo hiệu năng, tính bảo mật và khả năng mở rộng.
+          </p>
+        </div>
+      </div>
+    </section>
+    <h2 class="category-title" id="ky-nang">Kỹ năng</h2>
+    <section class="skills-section">
+      <div class="skill-card">
+        <h3>Kỹ năng mềm</h3>
+        <ul>
+          <li>Giao tiếp</li>
+          <li>Làm việc nhóm</li>
+          <li>Tư duy sáng tạo trong thiết kế</li>
+          <li>Quản lý thời gian</li>
+          <li>Tự học và chủ động</li>
+          <li>Thích tìm hiểu thêm các công nghệ lập trình mới</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Kỹ năng chuyên môn</h3>
+        <ul>
+          <li><b>Programming:</b> C#, JavaScript, PHP, C++, TypeScript</li>
+          <li><b>Backend:</b> Spring Boot, FastAPI, NestJS</li>
+          <li><b>Architecture &amp; API:</b> Microservices, gRPC, JWT</li>
+          <li><b>Frontend:</b> React, HTML, CSS, NestJS</li>
+          <li>
+            <b>Database:</b> MySQL, PostgreSQL, MongoDB,SQL server, Supabase
+          </li>
+          <li><b>Devops &amp; tools:</b> Docker, Git, Postman, Render</li>
+        </ul>
+      </div>
+    </section>
+    <h2 class="category-title" id="du-an">Các dự án đã thực hiện</h2>
+    <section class="project-section">
+      <div class="project-card project-featured">
+        <h3>Trang quản lý sinh viên</h3>
+        <div class="project-thumb">
+          <img src="img/quanlysinhvien.png" alt="Trang quản lý sinh viên" />
+        </div>
+        <p>Quản lý thông tin sinh viên gồm thêm, sửa, xóa và tìm kiếm hồ sơ.</p>
+        <a class="project-btn" href="#">Xem chi tiết</a>
+      </div>
+      <div class="project-card">
+        <h3>Quản lý task</h3>
+        <div class="project-thumb">
+          <img src="img/quanlytask.jpg" alt="Quản lý task" />
+        </div>
+        <p>
+          Theo dõi công việc cần làm, đánh dấu hoàn thành và lọc theo trạng
+          thái.
+        </p>
+        <a class="project-btn" href="#">Xem chi tiết</a>
+      </div>
+      <div class="project-card">
+        <h3>Quản lý chi tiêu</h3>
+        <div class="project-thumb">
+          <img src="img/quanlychitieu.png" alt="Quản lý chi tiêu" />
+        </div>
+        <p>
+          Ghi lại các khoản thu chi và xem tổng hợp chi tiêu theo thời gian.
+        </p>
+        <a class="project-btn" href="#">Xem chi tiết</a>
+      </div>
+    </section>
+    <h2 class="category-title">Các công nghệ sử dụng</h2>
+    <section class="tools-section">
+      <div class="tool-card">
+        <div class="tool-icon"><img src="img/html.png" alt="HTML5" /></div>
+        <div>
+          <h3>HTML5</h3>
+          <p>Ngôn ngữ đánh dấu xây dựng cấu trúc trang web</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><img src="img/docker.png" alt="Docker" /></div>
+        <div>
+          <h3>Docker</h3>
+          <p>Nền tảng đóng gói ứng dụng dạng container</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">
+          <img src="img/github.png" alt="Git và GitHub" />
+        </div>
+        <div>
+          <h3>Git và GitHub</h3>
+          <p>Quản lý phiên bản và lưu trữ mã nguồn</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">
+          <img src="img/vscode.jpg" alt="Visual Studio Code" />
+        </div>
+        <div>
+          <h3>Visual Studio Code</h3>
+          <p>Trình soạn thảo mã nguồn chính</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><img src="img/css.png" alt="CSS3" /></div>
+        <div>
+          <h3>CSS3</h3>
+          <p>Ngôn ngữ tạo kiểu và bố cục cho trang web</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><img src="img/postman.png" alt="Postman" /></div>
+        <div>
+          <h3>Postman</h3>
+          <p>Kiểm tra và gỡ lỗi API</p>
+        </div>
+      </div>
+    </section>
+    <footer id="lien-he">
+      <div class="footer-col">
+        <h3>Liên hệ</h3>
+        <p>Email: an@gmail.com</p>
+        <p>Điện thoại: 1900 100 thấy</p>
+        <p>Địa chỉ: TP. Hồ Chí Minh</p>
+      </div>
+      <div class="footer-col">
+        <h3>Mạng xã hội</h3>
+        <p><a href="#">Zalo</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Instagram</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
