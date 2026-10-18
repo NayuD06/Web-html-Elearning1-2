@@ -37,7 +37,6 @@ img{
     width:100%;
 }
 
-/* index.html */
 header{
     background-color: var(--color-primary);
     min-height:80px;
@@ -49,9 +48,6 @@ header{
     box-sizing:border-box;
     box-shadow: 0 0 0 100vmax var(--color-primary);
     clip-path: inset(0 -100vmax);
-}
-header .logo{
-    justify-self:start;
 }
 header .loginbutton{
     justify-self:end;
@@ -73,10 +69,6 @@ header .loginbutton{
     font-size: var(--font-size-medium);
     font-weight: bold;
     line-height: 1;
-}
-.search{
-    display:flex;
-    align-items: center;
 }
 #search-input{
     outline:none;
@@ -120,13 +112,8 @@ nav{
     box-shadow: 0 0 0 100vmax var(--color-primary);
     clip-path: inset(0 -100vmax);
 }
-.menu-check{
-    display:none;
-}
 .menu-icon{
-    width:40px;
     display:none;
-    cursor:pointer;
 }
 .menu-icon img{
     filter: invert(1);
@@ -364,18 +351,7 @@ footer{
         white-space:nowrap;
     }
     nav{
-        flex-direction: column;
-    }
-    .menu{
         display:none;
-        flex-direction: column;
-        width:100%;
-    }
-    .menu-check:checked ~ nav .menu{
-        display:flex;
-    }
-    .menu>li{
-        text-align:center;
     }
     .profile-card{
         grid-template-columns: 1fr;
@@ -389,7 +365,6 @@ footer{
     .profile-avatar{
         width:200px;
         height:200px;
-        aspect-ratio:auto;
     }
     .skills-section,
     .tools-section,
@@ -398,7 +373,6 @@ footer{
     }
 }
 
-/* ===== Trang đăng nhập ===== */
 .auth{
     min-height:100vh;
     display:flex;
@@ -486,7 +460,6 @@ footer{
     color: var(--color-primary);
 }
 
-/* Admin */
 .admin{
     width:100%;
     max-width:none;
@@ -537,12 +510,10 @@ footer{
     font-weight:bold;
     text-decoration:none;
     padding:8px 16px;
-    border:1px solid var(--color-secondary);
     border-radius: var(--radius);
 }
 .logout:hover{
     background-color: var(--color-surface);
-    border-color: var(--color-surface);
     color: var(--color-primary);
 }
 .layout{
