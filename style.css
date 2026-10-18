@@ -400,8 +400,6 @@ footer{
 
 /* ===== Trang đăng nhập ===== */
 .auth{
-    width:100%;
-    max-width:none;
     min-height:100vh;
     display:flex;
     flex-direction:column;
@@ -410,11 +408,6 @@ footer{
 }
 .auth footer{
     margin-top:auto;
-}
-.brand span{
-    color: var(--color-surface);
-    font-size: var(--font-size-medium);
-    font-weight:bold;
 }
 .login{
     width:calc(100% - 32px);

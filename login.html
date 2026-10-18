@@ -7,18 +7,38 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body class="auth">
-    <header class="topbar">
-      <div class="brand">
-        <img src="img/logo.jpg" alt="Logo" />
-        <span>Profile</span>
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Ảnh logo" />
+        <label class="menu-icon" for="menu-check"
+          ><img src="img/menu.png" alt="Mở menu"
+        /></label>
+        <span class="profile-name">Profile</span>
       </div>
-      <a class="logout" href="index.html">← Trang chủ</a>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Search" />
+      </div>
+      <div class="loginbutton">
+        <a class="login-btn" href="index.html">Trang chủ</a>
+      </div>
     </header>
+    <input type="checkbox" id="menu-check" class="menu-check" />
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="index.html#ky-nang">Kĩ năng</a></li>
+        <li><a href="index.html#du-an">Dự án</a></li>
+        <li><a href="index.html#lien-he">Liên hệ</a></li>
+      </ul>
+    </nav>
 
     <main class="login">
       <div class="intro">
-        <h2>Chào mừng trở lại</h2>
-        <p>Đăng nhập để vào trang quản trị portfolio của Mạch Duy An.</p>
+        <h2>Mình xin chào ạ</h2>
+        <p>
+          Hãy đăng nhập để truy cập vào trang admin giới thiệu bản thân của mình
+        </p>
         <ul>
           <li>Quản lý các dự án đã thực hiện</li>
           <li>Cập nhật kỹ năng và công nghệ</li>
@@ -28,23 +48,34 @@
       <div class="box">
         <h1>Đăng nhập</h1>
         <label for="username">Tên đăng nhập</label>
-        <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Nhập tên đăng nhập" />
         <label for="password">Mật khẩu</label>
-        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Nhập mật khẩu" />
         <a class="submit" href="admin.html">Đăng nhập</a>
-        <a class="back" href="index.html">← Quay lại trang chủ</a>
+        <a class="back" href="index.html">Quay lại trang chủ</a>
       </div>
     </main>
 
-    <footer>
+    <footer id="lien-he">
       <div class="footer-col">
         <h3>Liên hệ</h3>
         <p>Email: an@gmail.com</p>
+        <p>Điện thoại: 1900 100 thấy</p>
         <p>Địa chỉ: TP. Hồ Chí Minh</p>
       </div>
       <div class="footer-col">
         <h3>Mạng xã hội</h3>
-        <p><a href="#">Zalo</a> · <a href="#">Facebook</a> · <a href="#">Instagram</a></p>
+        <p><a href="#">Zalo</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Instagram</a></p>
       </div>
     </footer>
   </body>
